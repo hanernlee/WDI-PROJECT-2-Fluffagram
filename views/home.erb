@@ -9,7 +9,7 @@
        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
        <ul class="right hide-on-med-and-down">
          <li><a class="modal-trigger" href="#modal2"><i class="material-icons">settings</i></a></li>
-          <li><a href="/single"><i class="material-icons">view_module</i></a></li>
+          <li><a href="/edit"><i class="material-icons">view_module</i></a></li>
           <li><form action="/login" method="post">
             <input type="hidden" value="delete" name="_method"><button class="teal" id="logging_out"><i class="material-icons">input</i></button></form></li>
        </ul>
@@ -17,7 +17,7 @@
       <div id="mobile_wrapper">
          <ul id="mobile-demo" class="side-nav">
            <li><a class="modal-trigger" href="#modal2"><i class="material-icons">settings</i></a></li>
-            <li><a href="/single"><i class="material-icons">view_module</i></a></li>
+            <li><a href="/edit"><i class="material-icons">view_module</i></a></li>
             <li><form action="/login" method="post">
               <input type="hidden" value="delete" name="_method"><button id="logging_out_mobile"><i class="material-icons">input</i></button></form></li>
          </ul>
@@ -31,7 +31,7 @@
 <div id="modal2" class="modal">
   <div class="modal-content">
     <h5>Edit Your Email and Password</h5>
-    <form action="/edit" method="post">
+    <form action="/edit/details" method="post">
       <input type="hidden" value="patch" name ="_method">
 
         <div class="row">
@@ -92,9 +92,10 @@
 
       <div id="photo_container" class="container">
         <% @photo.each do |pic|%>
-        <div id="photo_layout" class="col s12">
+        <div id="photo_layout" class="col s6">
           <a href="/info/<%= pic.id%>"><img class="grid_photo" src="<%= pic.img_url%>"></a>
           <div class="chip" id="user"><%= pic.user.username%></p></div>
+          <div class="transparent chip" id="like_btn"><img id="pawlikes" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Black_Paw.svg/852px-Black_Paw.svg.png"><%=pic.likes.count%> likes</div>
         </div>
         <% end %>
       </div>

@@ -1,0 +1,240 @@
+body {
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+#heads {
+  display:inline-block;
+  padding:2em;
+}
+#heads h6 {
+  margin:0;
+}
+
+#brand_logo {
+  float:left;
+}
+
+.logging {
+  display:inline-block;
+}
+
+#paw {
+  height:auto;
+  width:1em;
+}
+
+#sign_up {
+  margin: 0 auto;
+  width: 50%;
+}
+
+#login {
+  margin: 0 auto;
+  width: 50%;
+}
+
+#logsign {
+  margin: 0 auto;
+  margin-bottom:em;
+  width:50%;
+  padding-top:5em;
+  text-align:center;
+}
+
+#error_msg {
+  margin-bottom:0;
+}
+#sign {
+  background-color: Transparent;
+  border-right: 1px solid white;
+}
+
+#log {
+  background-color: Transparent;
+  border-left: 1px solid white;
+}
+
+#sign:hover, #log:hover {
+  background-color:rgba(0,0,0,0.5);
+}
+
+#bg {
+  background-image: url('http://wallper.net/wp-content/uploads/2015/08/Runny-puppy-640x427.jpg');
+  background-size:cover;
+  height:100vh;
+  color:white;
+}
+
+#bg_pic {
+  background-color: rgba(0,0,0,0.7);
+  height:100vh;
+}
+
+#error_msg {
+  text-align:center;
+}
+
+/*home page styles*/
+
+.bg_op {
+  background-color: rgba(0,0,0,0.5);
+}
+
+#mobile-demo {
+  background-color: rgba(0,0,0,0.9);
+  width:7em;
+}
+
+.nav-wrapper {
+  background-color: rgba(0,0,0,0.5);
+}
+
+#top_home {
+  height:100vh;
+}
+
+#greeting {
+  margin:0 auto;
+  margin-top: 10em;
+  color:white;
+  text-align:center;
+}
+
+#arrowdown {
+  margin:0 auto;
+  margin-top: 15em;
+  color:white;
+  text-align:center;
+}
+
+#arrow {
+  font-size:3em;
+}
+
+#logging_out {
+  border:none;
+  padding:0;
+  margin:0 1em;
+}
+
+#logging_out_mobile {
+  border:none;
+  background-color: rgba(0,0,0,0.9);
+  margin-left:1.8em;
+  text-align:center;
+}
+
+#photo_layout {
+  text-align:center;
+  height:40%;
+  margin-top:2em;
+}
+
+.grid_photo {
+  display:block;
+  height:auto;
+  width:100%;
+}
+
+#user {
+  float:left;
+}
+
+#like_btn {
+  float:right;
+}
+
+#pawlikes {
+  height:auto;
+  width:1.5em;
+  position:relative;
+  top:0.4em;
+}
+
+/*info page*/
+
+#showpage {
+  height:100%;
+}
+
+#info_par {
+  height:4.1em;
+}
+
+
+#middle {
+  padding:0;
+  margin:0;
+  text-align:center;
+}
+
+#middle img {
+  height:auto;
+  width:80%;
+}
+
+.image_content {
+  margin-top:2em;
+}
+
+#comment_btn {
+  float:left;
+}
+
+#comment_box {
+  margin: 1em auto;
+  width:80%;
+  display:inline-block;
+}
+
+#commentbub {
+  margin:1em;
+}
+
+#showpage_one {
+  height:100%;
+}
+
+#pawinfo {
+  float:right;
+  margin-right:4em;
+}
+
+#pawinfo img {
+  height:auto;
+  width:2em;
+}
+
+#pawinfo img:hover {
+  background-color:#58ACFA;
+}
+
+/*single page*/
+
+#delete_btn {
+  float:left;
+  position:relative;
+  top:5em;
+  left:0.5em;
+}
+
+#card_grid {
+  margin:0;
+  text-align:center;
+}
+
+#sadpug {
+  height:100%;
+  width:50%;
+}
+
+#grids {
+  margin: 0;
+  padding:2em;
+  padding-top:0;
+}
+
+#user_pic {
+  width: 100%;
+}

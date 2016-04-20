@@ -1,5 +1,6 @@
   <div id="info_par" class="parallax-container bg_op">
     <a class="btn-floating btn-large waves-effect waves-light red" href="/home"><i class="material-icons">home</i></a>
+      <a class="btn-floating btn-large waves-effect waves-light red" href="/edit"><i class="material-icons">view_module</i></a>
 
     <div class="parallax"><img src="https://lh4.ggpht.com/M1XTibfCgpi5pgjSDb7kXDh21N8fpn-8evzQVAX-qGFhSyArDmSuCAv1pjVp4jbAt_g=h900"></div>
   </div>
@@ -10,20 +11,26 @@
           <div class="image_content">
               <img src="<%= @info.img_url%>">
               <a id="comment_btn" class="btn-floating btn-large red modal-trigger" href="#modal1"><i class="large material-icons">mode_edit</i></a>
+
+            <div class="col s12">
+              <div id="pawinfo" class=" transparent chip">
+                <a href="/likes/<%= @info.id%>"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Black_Paw.svg/852px-Black_Paw.svg.png"><%=@likes%> likes</a>
+              </div>
+            </div>
           </div>
+
 
           <div id="comment_box">
             <% @comments.each do |comment| %>
-              <div id="commentbub" class="chip"><%= comment.user.username  %> commented <b>"<%= comment.body %>"</b> </div>
+              <div id="commentbub" class="col s12 chip"><%= comment.user.username%> commented <b>"<%= comment.body %>"</b></div>
             <% end %>
           </div>
-
 
            <!-- Modal Structure -->
            <div id="modal1" class="modal">
              <div class="modal-content">
                <form class="col s12" action="/info/<%= @info.id%>/comments" method ="post">
-                 <textarea id="textarea1" class="materialize-textarea" name ="body" required="" aria-required="true"></textarea>
+                 <textarea length="30" id="textarea1" class="materialize-textarea" name ="body" required="" aria-required="true" length="30"></textarea>
              <div class="modal-footer">
                <button class="modal-action modal-close btn waves-effect waves-light">Comment<i class="material-icons right">comment</i></button>
              </form>
