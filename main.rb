@@ -43,8 +43,6 @@ helpers do
 
   def logged_in?
     !!current_user
-    #if current user is true then it will return true otherwise you will get a false
-    #double negate
   end
 
 end
@@ -102,9 +100,8 @@ end
 
 get '/home' do
   @photo = Photo.all
-  @name = User.all
 
-  @username = current_user
+  @user = current_user
 
   @like = Like.all
 
@@ -131,8 +128,6 @@ end
 get '/info/:id' do
 
   @info = Photo.find(params[:id])
-
-  @username = User.find(@info.user_id)
 
   @comments = @info.comments
 

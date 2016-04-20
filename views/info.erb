@@ -1,6 +1,6 @@
   <div id="info_par" class="parallax-container bg_op">
-    <a class="btn-floating btn-large waves-effect waves-light red" href="/home"><i class="material-icons">home</i></a>
-      <a class="btn-floating btn-large waves-effect waves-light red" href="/edit"><i class="material-icons">view_module</i></a>
+    <a class="btn-floating btn-large waves-effect waves-light indigo" href="/home"><i class="material-icons">home</i></a>
+      <a class="btn-floating btn-large waves-effect waves-light indigo" href="/edit"><i class="material-icons">view_module</i></a>
 
     <div class="parallax"><img src="https://lh4.ggpht.com/M1XTibfCgpi5pgjSDb7kXDh21N8fpn-8evzQVAX-qGFhSyArDmSuCAv1pjVp4jbAt_g=h900"></div>
   </div>
@@ -12,9 +12,18 @@
               <img src="<%= @info.img_url%>">
               <a id="comment_btn" class="btn-floating btn-large red modal-trigger" href="#modal1"><i class="large material-icons">mode_edit</i></a>
 
-            <div class="col s12">
+              <%if @info.user_id == current_user.id %>
+              <div class="">
+                <form action="/edit/<%=@info.id%>" method="post">
+                  <input type="hidden" value="delete" name="_method">
+                    <button id="delete_show" class="red darken-4 btn-floating btn-large waves-effect waves-light red btn"><i class="material-icons">delete</i></button>
+                </form>
+              </div>
+              <%end%>
+
+            <div class="col s6 offset-s6">
               <div id="pawinfo" class=" transparent chip">
-                <a href="/likes/<%= @info.id%>"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Black_Paw.svg/852px-Black_Paw.svg.png"><%=@likes%> likes</a>
+                <a href="/likes/<%= @info.id%>"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Black_Paw.svg/852px-Black_Paw.svg.png"><%=@likes%></a>
               </div>
             </div>
           </div>
