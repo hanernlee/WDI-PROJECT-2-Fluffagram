@@ -1,7 +1,10 @@
 source 'https://rubygems.org'
+ruby '2.3.0'
+
 gem 'sinatra'
 gem 'pg'
 gem 'activerecord'
 gem 'carrierwave'
 gem 'sinatra-flash'
 gem 'fog'
+gem 'bcrypt-ruby'

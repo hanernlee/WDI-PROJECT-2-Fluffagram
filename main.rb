@@ -1,4 +1,4 @@
-require 'sinatra'
+hrequire 'sinatra'
 require 'sinatra/flash'
 
 require './db_config'
