@@ -103,7 +103,7 @@ body {
 
 #arrowdown {
   margin:0 auto;
-  margin-top: 15em;
+  margin-top: 10em;
   color:white;
   text-align:center;
 }
@@ -150,6 +150,10 @@ body {
   width:1.5em;
   position:relative;
   top:0.4em;
+}
+
+#catbelow {
+  height:20em;
 }
 
 /*info page*/

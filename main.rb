@@ -55,6 +55,7 @@ get '/' do
   erb :index
 end
 
+# Creating new user here
 post '/new' do
   firstname = params[:firstname]
   lastname = params[:lastname]
@@ -62,11 +63,13 @@ post '/new' do
   email = params[:email]
   password = params[:password]
 
+# Check if username and email is already taken
   if User.exists?(username: params[:username]) || User.exists?(email: params[:email])
 
     flash[:error] = "Sorry your username or email has been taken. Please retry again"
     redirect '/'
 
+# Creates new user if username and email not taken
   else
     user = User.new
     user.firstname = params[:firstname]
@@ -84,16 +87,18 @@ post '/login' do
 
   user = User.find_by(email: params[:email])
 
+#if true then authenticate the password
+#create a new session to store id
   if user && user.authenticate(params[:password])
-    #if true then authenticate the password
-    #create a new session to store id
+
     session[:user_id] = user.id
-    #redirect
+
     redirect to '/home'
   else
+#Show error if email and password is incorrect
+
     flash[:error] = "Sorry your email or password is incorrect. Please retry again"
     redirect '/'
- #stay at login form if no login and password
   end
 
 end
@@ -108,13 +113,14 @@ get '/home' do
   erb :home
 end
 
+# delete session on logout
 delete '/login' do
   session[:user_id] = nil
   redirect to '/'
-
 end
 
 post '/upload' do
+# if image path not nil then save photo
   if params[:image] != nil
     upload = Photo.new
     upload.img_url = params[:image]
@@ -137,7 +143,7 @@ get '/info/:id' do
 end
 
 post '/info/:id/comments' do
-
+# create new comment if its not empty
   if params[:body] != ""
     comment = Comment.new
     comment.body = params[:body]
@@ -150,7 +156,7 @@ post '/info/:id/comments' do
 end
 
 patch '/edit/details' do
-
+# Editing email or password
   @user = current_user
   @user.email = params[:email]
   @user.password = params[:password]
@@ -160,14 +166,14 @@ patch '/edit/details' do
 end
 
 get '/edit' do
-
+# displaying dashboard of images owned by user
   @images = Photo.all.where(user_id: session[:user_id])
 
   erb :edit
 end
 
 delete '/edit/:id' do
-
+# deleting images
   img = Photo.find(params[:id])
   img.destroy
 
@@ -176,7 +182,7 @@ delete '/edit/:id' do
 end
 
 get '/likes/:photoid' do
-
+# saves likes
   like = Like.new
   like.user_id = session[:user_id]
   like.photo_id = params[:photoid]

@@ -6,11 +6,13 @@
 
   <nav class="indigo">
     <div>
-      <a href="#" class="indigo brand-logo">Your current photos</a>
+      <a href="#" class="indigo brand-logo">Your current collection</a>
       </ul>
     </div>
   </nav>
 
+
+<!-- This loop generates all images from the database and creates a modal with unique index assign to it -->
   <div id="card_grid" class="row indigo">
     <% @images.each_with_index do |img,index|%>
       <%index=index+1%>
@@ -19,7 +21,7 @@
 
         <a href="/info/<%=img.id%>"><img id="user_pic" src ="<%= img.img_url%>"></a>
 
-        <!-- modal delete -->
+<!-- Delete confirmation modal pops up onclick with a form. The modal popped up is based on the clicked delete icon-->
         <div id="modal<%=index%>" class="modal">
           <div class="modal-content">
             <form action="/edit/<%=img.id%>" method="post">
@@ -49,6 +51,6 @@
 
 
 
-  <div class="parallax-container bg_op">
+  <div id="catbelow" class="parallax-container bg_op">
     <div class="parallax"><img src="https://lh4.ggpht.com/M1XTibfCgpi5pgjSDb7kXDh21N8fpn-8evzQVAX-qGFhSyArDmSuCAv1pjVp4jbAt_g=h900"></div>
   </div>

@@ -1,19 +1,24 @@
-<!-- navbar here -->
+<!-- Navbar right here -->
 <div id="nav_bar" class="navbar-fixed">
   <nav id="nav_bar">
-     <div class="nav-wrapper teal">
+     <div class="nav-wrapper indigo">
        <a href="#!" class="brand-logo">
          <div id="brand_logo"><h4>.fluff <img id="paw" src="http://www.clker.com/cliparts/N/k/w/w/c/E/white-dog-pint-md.png"></h4>
          </div>
        </a>
+
+<!-- Link included to activate hamburger menu -->
        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+
+<!-- normal menu when webpage is full -->
        <ul class="right hide-on-med-and-down">
          <li><a class="modal-trigger" href="#modal2"><i class="material-icons">settings</i></a></li>
           <li><a href="/edit"><i class="material-icons">view_module</i></a></li>
           <li><form action="/login" method="post">
-            <input type="hidden" value="delete" name="_method"><button class="teal" id="logging_out"><i class="material-icons">input</i></button></form></li>
+            <input type="hidden" value="delete" name="_method"><button class="indigo" id="logging_out"><i class="material-icons">input</i></button></form></li>
        </ul>
 
+<!-- hamburger menu when webpage is smaller -->
       <div id="mobile_wrapper">
          <ul id="mobile-demo" class="side-nav">
            <li><a class="modal-trigger" href="#modal2"><i class="material-icons">settings</i></a></li>
@@ -26,7 +31,7 @@
    </nav>
 </div>
 
-<!-- edit email settings modal -->
+<!-- Popup modal to edit email or password -->
 
 <div id="modal2" class="modal">
   <div class="modal-content">
@@ -60,7 +65,7 @@
 </div>
 
 
-<!-- body content here -->
+<!-- Body content here -->
 <div id="top_home" class="parallax-container bg_op">
      <div class="parallax"><img src="https://lh4.ggpht.com/M1XTibfCgpi5pgjSDb7kXDh21N8fpn-8evzQVAX-qGFhSyArDmSuCAv1pjVp4jbAt_g=h900">
      </div>
@@ -72,6 +77,7 @@
     </div>
 </div>
 
+<!-- this div shows all collection of images uploaded by all users -->
  <div id="mid_content" class="section white">
    <div class="row container">
        <h2 class="header">Hello <%= current_user.firstname %>, </h2>
@@ -90,6 +96,7 @@
         </div>
       </div>
 
+<!-- This loop shows all images with username and likes -->
       <div id="photo_container" class="container">
         <% @photo.each do |pic|%>
         <div id="photo_layout" class="col s6">
@@ -99,12 +106,10 @@
         </div>
         <% end %>
       </div>
-
-   </div>
-
+     </div>
    </div>
  </div>
 
- <div class="parallax-container bg_op">
+ <div id="catbelow" class="parallax-container bg_op">
    <div class="parallax"><img src="https://lh4.ggpht.com/M1XTibfCgpi5pgjSDb7kXDh21N8fpn-8evzQVAX-qGFhSyArDmSuCAv1pjVp4jbAt_g=h900"></div>
  </div>
