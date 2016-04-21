@@ -60,7 +60,7 @@ body {
 }
 
 #bg {
-  background-image: url('http://wallper.net/wp-content/uploads/2015/08/Runny-puppy-640x427.jpg');
+  background-image: url('../images/bg1.jpg');
   background-size:cover;
   height:100vh;
   color:white;
@@ -153,7 +153,7 @@ body {
 }
 
 #catbelow {
-  height:20em;
+  height:100vh;
 }
 
 /*info page*/
@@ -165,7 +165,6 @@ body {
 #info_par {
   height:4.1em;
 }
-
 
 #middle {
   padding:0;

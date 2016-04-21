@@ -1,11 +1,11 @@
   <div id="info_par" class="parallax-container bg_op">
-    <a class="btn-floating btn-large waves-effect waves-light teal" href="/home"><i class="material-icons">home</i></a>
 
-    <div class="parallax"><img src="https://lh4.ggpht.com/M1XTibfCgpi5pgjSDb7kXDh21N8fpn-8evzQVAX-qGFhSyArDmSuCAv1pjVp4jbAt_g=h900"></div>
+    <div class="parallax"><img src="../images/bg2.jpg"></div>
   </div>
 
   <nav class="indigo">
     <div>
+      <a class="btn-floating btn-large waves-effect waves-light teal" href="/home"><i class="material-icons">home</i></a>
       <a href="#" class="indigo brand-logo">Your current collection</a>
       </ul>
     </div>
@@ -13,7 +13,7 @@
 
 
 <!-- This loop generates all images from the database and creates a modal with unique index assign to it -->
-  <div id="card_grid" class="row indigo">
+  <div id="card_grid" class="row white">
     <% @images.each_with_index do |img,index|%>
       <%index=index+1%>
       <div id="grids" class="col s6">
@@ -28,7 +28,7 @@
               <input type="hidden" value="delete" name="_method">
             <h4>Confirm Delete ?</h4>
             <p>Pugtato is sad... :(</p>
-            <img id='sadpug' src="http://deskbg.com/i/c/750x422/wpp/25/25007/sad-pug-desktop-background.jpg">
+            <img id='sadpug' src="../images/sadpug.jpg">
           </div>
           <div class="modal-footer">
             <button class="red darken-4 btn waves-effect waves-light" type="submit" name="action">Delete
@@ -52,5 +52,5 @@
 
 
   <div id="catbelow" class="parallax-container bg_op">
-    <div class="parallax"><img src="https://lh4.ggpht.com/M1XTibfCgpi5pgjSDb7kXDh21N8fpn-8evzQVAX-qGFhSyArDmSuCAv1pjVp4jbAt_g=h900"></div>
+    <div class="parallax"><img src="../images/bg2.jpg"></div>
   </div>

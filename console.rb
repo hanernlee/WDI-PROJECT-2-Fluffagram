@@ -1,9 +1,6 @@
 require 'pry'
 require 'active_record'
 
-
-
-# if i run anything on console it will show me the sql command on the screen
 ActiveRecord::Base.logger = Logger.new(STDERR)
 
 

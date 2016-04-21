@@ -3,7 +3,7 @@
   <nav id="nav_bar">
      <div class="nav-wrapper indigo">
        <a href="#!" class="brand-logo">
-         <div id="brand_logo"><h4>.fluff <img id="paw" src="http://www.clker.com/cliparts/N/k/w/w/c/E/white-dog-pint-md.png"></h4>
+         <div id="brand_logo"><h4>.fluff <img id="paw" src="../images/whitepaw.png"></h4>
          </div>
        </a>
 
@@ -67,7 +67,7 @@
 
 <!-- Body content here -->
 <div id="top_home" class="parallax-container bg_op">
-     <div class="parallax"><img src="https://lh4.ggpht.com/M1XTibfCgpi5pgjSDb7kXDh21N8fpn-8evzQVAX-qGFhSyArDmSuCAv1pjVp4jbAt_g=h900">
+     <div class="parallax"><img src="../images/bg2.jpg">
      </div>
     <div id="greeting" class="row">
       <h1 class="header">Meow You Doing Today?</h2>
@@ -102,7 +102,7 @@
         <div id="photo_layout" class="col s6">
           <a href="/info/<%= pic.id%>"><img class="grid_photo" src="<%= pic.img_url%>"></a>
           <div class="chip" id="user"><%= pic.user.username%></p></div>
-          <div class="transparent chip" id="like_btn"><img id="pawlikes" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Black_Paw.svg/852px-Black_Paw.svg.png"><%=pic.likes.count%> likes</div>
+          <div class="transparent chip" id="like_btn"><img id="pawlikes" src="../images/blackpaw.png"><%=pic.likes.count%> likes</div>
         </div>
         <% end %>
       </div>
@@ -111,5 +111,5 @@
  </div>
 
  <div id="catbelow" class="parallax-container bg_op">
-   <div class="parallax"><img src="https://lh4.ggpht.com/M1XTibfCgpi5pgjSDb7kXDh21N8fpn-8evzQVAX-qGFhSyArDmSuCAv1pjVp4jbAt_g=h900"></div>
+   <div class="parallax"><img src="../images/bg2.jpg"></div>
  </div>
