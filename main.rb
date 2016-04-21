@@ -45,6 +45,7 @@ post '/new' do
 
 # Creates new user if username and email not taken
   else
+
     user = User.new
     user.firstname = params[:firstname]
     user.lastname = params[:lastname]
@@ -52,6 +53,9 @@ post '/new' do
     user.email = params[:email]
     user.password = params[:password]
     user.save
+
+    session[:user_id] = user.id
+
     redirect to '/home'
 
   end
@@ -79,8 +83,6 @@ end
 
 get '/home' do
   @photo = Photo.all
-
-  @user = current_user
 
   @like = Like.all
 
