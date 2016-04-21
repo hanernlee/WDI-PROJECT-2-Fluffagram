@@ -47,12 +47,10 @@ body {
 }
 #sign {
   background-color: Transparent;
-  border-right: 1px solid white;
 }
 
 #log {
   background-color: Transparent;
-  border-left: 1px solid white;
 }
 
 #sign:hover, #log:hover {
