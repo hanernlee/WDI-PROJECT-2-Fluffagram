@@ -18,8 +18,8 @@ end
 
 # imageuploader to store files
 class ImageUploader < CarrierWave::Uploader::Base
-  storage :file
-  # storage :file
+  storage :fog
+  # storage :file (if using localhost)
 end
 
 class Photo < ActiveRecord::Base

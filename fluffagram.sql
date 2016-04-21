@@ -1,4 +1,4 @@
-CREATE DATABASE pawstagram;
+CREATE DATABASE fluffagram;
 
 CREATE TABLE users (
   id SERIAL4 PRIMARY KEY,

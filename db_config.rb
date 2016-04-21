@@ -4,7 +4,7 @@ require 'carrierwave'
 #connects to different databases
 options = {
   adapter: "postgresql",
-  database: "pawstagram"
+  database: "fluffagram"
 }
 
 #connecting to database

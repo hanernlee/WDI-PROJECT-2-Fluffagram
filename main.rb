@@ -1,6 +1,4 @@
-require 'PG'
 require 'sinatra'
-require 'sinatra/reloader'
 require 'sinatra/flash'
 
 require './db_config'
