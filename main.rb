@@ -1,5 +1,4 @@
 require 'sinatra'
-require 'sinatra/flash'
 
 require './db_config'
 require './models/user'
