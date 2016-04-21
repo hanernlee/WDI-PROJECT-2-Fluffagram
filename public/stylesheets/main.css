@@ -204,15 +204,12 @@ body {
 
 #pawinfo {
   float:left;
+  padding:0;
 }
 
 #pawinfo img {
   height:auto;
   width:2em;
-}
-
-#pawinfo img:hover {
-  background-color:#58ACFA;
 }
 
 /*edit page*/
