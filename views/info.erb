@@ -27,7 +27,7 @@
        <div class="row container">
           <div class="image_content">
               <img src="<%= @info.img_url%>">
-              <a id="comment_btn" class="btn-floating btn-large red modal-trigger" href="#modal1"><i class="large material-icons">mode_edit</i></a>
+              <a id="comment_btn" class="btn-floating btn-large red modal-trigger" href="#modal2"><i class="large material-icons">mode_edit</i></a>
 
 <!-- if user_id of photo is the same as current user then show delete icon -->
               <%if @info.user_id == current_user.id %>
@@ -77,7 +77,7 @@
           </div>
 
 <!-- Modal to show comments onclick -->
-           <div id="modal1" class="modal">
+           <div id="modal2" class="modal">
              <div class="modal-content">
                <form class="col s12" action="/info/<%= @info.id%>/comments" method ="post">
                  <textarea length="30" id="textarea1" class="materialize-textarea" name ="body" required="" aria-required="true" length="30"></textarea>
