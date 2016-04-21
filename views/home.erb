@@ -100,7 +100,7 @@
       <div id="photo_container" class="container">
         <% @photo.each do |pic|%>
         <div id="photo_layout" class="col s6">
-          <a href="/info/<%= pic.id%>"><img class="grid_photo" src="<%= pic.img_url%>"></a>
+          <a href="/info/<%= pic.id%>"><img class="grid_photo" src="<%= pic.img%>"></a>
           <div class="chip" id="user"><%= pic.user.username%></p></div>
           <div class="transparent chip" id="like_btn"><img id="pawlikes" src="../images/blackpaw.png"><%=pic.likes.count%> likes</div>
         </div>

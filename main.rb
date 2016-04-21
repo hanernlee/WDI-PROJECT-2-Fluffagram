@@ -99,7 +99,7 @@ post '/upload' do
 # if image path not nil then save photo
   if params[:image] != nil
     upload = Photo.new
-    upload.img_url = params[:image]
+    upload.img = params[:image]
     upload.user_id = session[:user_id]
     upload.save
   end

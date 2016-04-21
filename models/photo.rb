@@ -26,7 +26,7 @@ class Photo < ActiveRecord::Base
   has_many :comments
   has_many :likes
   belongs_to :user
-  mount_uploader :img_url, ImageUploader
+  mount_uploader :img, ImageUploader
   # img_url is the column name in db
   # ImageUploader is the filename
 end

@@ -19,7 +19,7 @@
       <div id="grids" class="col s6">
         <a id="delete_btn" class="red darken-4 btn-floating btn-large waves-effect waves-light red btn modal-trigger" href="<%= img.id%>, #modal<%=index%>"><i class="material-icons">delete</i></a>
 
-        <a href="/info/<%=img.id%>"><img id="user_pic" src ="<%= img.img_url%>"></a>
+        <a href="/info/<%=img.id%>"><img id="user_pic" src ="<%= img.img%>"></a>
 
 <!-- Delete confirmation modal pops up onclick with a form. The modal popped up is based on the clicked delete icon-->
         <div id="modal<%=index%>" class="modal">
@@ -42,9 +42,6 @@
             </div>
           </div>
         </div>
-
-
-
       </div>
     <%end %>
   </div>

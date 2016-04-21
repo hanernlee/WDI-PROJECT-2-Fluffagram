@@ -12,7 +12,7 @@ CREATE TABLE users (
 CREATE TABLE photos (
   id SERIAL4 PRIMARY KEY,
   user_id INTEGER,
-  img_url VARCHAR(800)
+  img VARCHAR(800)
 );
 
 CREATE TABLE comments (
