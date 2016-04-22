@@ -15,6 +15,10 @@ helpers do
     User.find_by(id: session[:user_id]) #returns nil if cant find anything
   end
 
+  def admin
+    User.find(1).id
+  end
+
   def logged_in?
     !!current_user
   end

@@ -30,7 +30,7 @@
               <a id="comment_btn" class="btn-floating btn-large red modal-trigger" href="#modal2"><i class="large material-icons">mode_edit</i></a>
 
 <!-- if user_id of photo is the same as current user then show delete icon -->
-              <%if @info.user_id == current_user.id %>
+              <%if @info.user_id == current_user.id || current_user.id == admin %>
               <div>
 
                     <a id="delete_show" class="red darken-4 btn-floating btn-large waves-effect waves-light red btn modal-trigger" href="#modal4"><i class="material-icons">delete</i></a>
