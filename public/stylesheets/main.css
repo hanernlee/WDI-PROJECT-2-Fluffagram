@@ -119,7 +119,7 @@ body {
 #logging_out_mobile {
   border:none;
   background-color: rgba(0,0,0,0.9);
-  margin-left:1.8em;
+  margin-left:1.6em;
   text-align:center;
 }
 
@@ -190,12 +190,21 @@ body {
 
 #comment_box {
   margin: 1em auto;
-  width:80%;
+  width:100%;
   display:inline-block;
 }
 
-#commentbub {
-  margin:1em;
+#titlename {
+  float:left;
+}
+
+#box {
+  float:left;
+  margin-left:0.5em;
+}
+
+#delete_comment {
+  float:right;
 }
 
 #showpage_one {

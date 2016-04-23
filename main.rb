@@ -171,3 +171,12 @@ get '/likes/:photoid' do
   redirect to "/info/#{params[:photoid]}"
 
 end
+
+delete '/comment/:id' do
+# deleting comment
+  delete_comment = Comment.find(params[:id])
+  delete_comment.destroy
+
+  redirect to "/edit"
+
+end

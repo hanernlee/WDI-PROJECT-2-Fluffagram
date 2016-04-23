@@ -39,9 +39,11 @@
                       <div class="modal-content">
                         <form action="/edit/<%=@info.id%>" method="post">
                           <input type="hidden" value="delete" name="_method">
-                          <h4>Confirm Delete ?</h4>
-                          <p>Pugtato is sad... :(</p>
-                          <img src="../images/sadpug.jpg">
+                            <h4>Confirm Delete ?</h4>
+                            <p>Pugtato is sad... :(</p>
+                          <div class="col s12">
+                            <img id="pugtato" src="../images/sadpug.jpg">
+                          </div>
                       </div>
                       <div class="modal-footer">
                         <button class="red darken-4 btn waves-effect waves-light" type="submit" name="action">Delete
@@ -58,7 +60,6 @@
                     </div>
               </div>
 
-
               <%end%>
 
 <!-- like button -->
@@ -69,14 +70,55 @@
             </div>
           </div>
 
-<!-- loop to display comments -->
+<!-- loop to display comments with delete button index starts at 6 to avoid clashing with other modals -->
           <div id="comment_box">
-            <% @comments.each do |comment| %>
-              <div id="commentbub" class="col s12 chip"><%= comment.user.username%> commented <b>"<%= comment.body %>"</b></div>
+            <% @comments.each_with_index do |comment,index| %>
+            <%index=index+5%>
+
+            <ul class="collection">
+              <li class="collection-item avatar">
+                 <i class="green material-icons circle">person</i>
+                   <b><span id="titlename" class="title"><%= comment.user.username%> commented : </span></b>
+                   <span id="box"> <%= comment.body %></span>
+
+<!-- if comments were by user id then show delete comment option, admin gets to delete any comments -->
+
+                  <% if comment.user_id == session[:user_id] || current_user.id == admin%>
+
+                    <a id="delete_comment" class="red darken-4 btn-floating waves-effect waves-light red btn modal-trigger" href="#modal<%=index%>"><i class="material-icons">delete</i></a>
+
+                    </a>
+
+                    <div id="modal<%=index%>" class="modal">
+                      <div class="modal-content">
+                        <form action="/comment/<%=comment.id%>" method="post">
+                          <input type="hidden" value="delete" name="_method">
+                        <h4>Delete comment ?</h4>
+                      </div>
+                      <div class="modal-footer">
+                        <button class="red darken-4 btn waves-effect waves-light" type="submit" name="action">Yes
+                         <i class="material-icons right">delete</i>
+                       </button>
+                       </form>
+                       <div id="nope">
+                         <button class="teal darken-4 btn waves-effect waves-light modal-close" name="action">No
+                          <i class="material-icons right">close</i>
+                         </button>
+                        </div>
+                      </div>
+                    </div>
+
+                  <%end%>
+
+
+                </li>
+              </ul>
             <% end %>
           </div>
 
-<!-- Modal to show comments onclick -->
+
+
+<!-- Modal to show comment box onclick -->
            <div id="modal2" class="modal">
              <div class="modal-content">
                <form class="col s12" action="/info/<%= @info.id%>/comments" method ="post">
