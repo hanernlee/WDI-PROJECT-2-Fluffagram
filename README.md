@@ -3,6 +3,8 @@
 
 Fluffagram is the instagram for pets.
 
+![alt text](http://i.imgur.com/8NCObcn.png)
+
 ***
 
 ## Objective
