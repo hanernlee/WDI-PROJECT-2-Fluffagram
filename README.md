@@ -76,7 +76,7 @@ Users are able to log into their account and view:
 - Their own collection of photos through the dashboard
 
 ###Update
-Users are able to update their email or password.
+Users are able to update their password.
 
 ###Delete
 Users are able to delete their own photos or comments

@@ -136,9 +136,8 @@ post '/info/:id/comments' do
 end
 
 patch '/edit/details' do
-# Editing email or password
+# Changing password
   @user = current_user
-  @user.email = params[:email]
   @user.password = params[:password]
   @user.save
 
