@@ -28,9 +28,9 @@ Develop a web application that utilises CRUD operations on a SQL database with R
 ## Key Features
 
 - Users can sign in and immediately post photos of animals
-- Users can then comment and like other users photos or their own.
+- Users can then comment and like other photos or their own.
 - Users can delete their photos.
-- Administrator can delete any user's photos.
+- Administrator can delete any uploaded photo.
 
 ***
 
@@ -38,7 +38,7 @@ Develop a web application that utilises CRUD operations on a SQL database with R
 
 [Start fluffing!](https://fluffagram.herokuapp.com/)
 
-Dummy login details for access to the user and administrator dashboards:
+Dummy login details for access below:
 
 **Administrator**
 
@@ -47,7 +47,7 @@ Password: pudding
 
 **User**
 
-Email:dt@ga.co
+Email: dt@ga.co
 Password: dt
 
 ***
@@ -59,8 +59,8 @@ The main challenge for me was to figure out what sort of application I wanted to
 One of the technical challenges I faced in building this application was in trying to understand how file upload works in the backend and getting the uploaded images stored on a hosting server.
 
 The other challenges included:
-- Assigning a delete button(with popup modals) to each image on the same page
-- Validating email or username that was already taken
+- Assigning a delete button(with modals) to each image on the same page
+- Deciding on the design of the website
 
 ***
 
@@ -74,7 +74,7 @@ Users are able to sign up and start positing photos
 -Password
 -Email
 
-###Ready
+###Read
 Users are able to log into their account and view:
 -Photos uploaded by other users
 -Their own collection of photos through the dashboard
