@@ -3,8 +3,6 @@
 
 Fluffagram is the instagram for pets.
 
-![alt text](http://i.imgur.com/8NCObcn.png)
-
 ***
 
 ## Objective
@@ -91,7 +89,9 @@ Administrator is able to delete any uploaded photo.
 
 Before starting a project, learn to stick to one idea and plan a lot!
 
-Special thanks to [DT](https://github.com/epoch), [Flo](https://github.com/florianjosefreheis) for testing my application and the iterm8s class for all the assistance and guidance!
+Special thanks to [DT](https://github.com/epoch) and the iterm8s class for all the assistance and guidance!
+
+Shoutout to [Flo](https://github.com/florianjosefreheis) for my testing my application.
 
 ***
 
