@@ -54,30 +54,26 @@ Password: dt
 
 ## Challenges
 
-The main challenge for me was to figure out what sort of application I wanted to built in 5 days. I found myself tossing up between ideas and coming back to them only to be back at square one. Learning to stick to one idea and being committed to it was definitely important.
+The main challenge for me was to figure out what sort of application I wanted to built in 5 days using CRUD operations. I found myself tossing up between ideas and coming back to them only to be back at square one. However, I finally settled on a photo sharing application as I wanted to explore the mechanism behind successful platforms like Instagram and Facebook.
 
-One of the technical challenges I faced in building this application was in trying to understand how file upload works in the backend and getting the uploaded images stored on a hosting server.
-
-The other challenges included:
-- Assigning a delete button(with modals) to each image on the same page
-- Deciding on the design of the website
+On a more technical note, the first challenge was to try to understand how file upload works in the backend and to get the uploaded images stored on a hosting server. The other technical challenge was to figure out how to assign a delete button(with modals) to each image on the same page
 
 ***
 
 ## CRUD operations
 
 ###Create
-Users are able to sign up and start positing photos
--First name
--Last name
--Username
--Password
--Email
+Users are able to sign up and start posting photos
+- First name
+- Last name
+- Username
+- Email
+- Password
 
 ###Read
 Users are able to log into their account and view:
--Photos uploaded by other users
--Their own collection of photos through the dashboard
+- Photos uploaded by other users
+- Their own collection of photos through the dashboard
 
 ###Update
 Users are able to update their email or password.
@@ -91,7 +87,7 @@ Administrator is able to delete any uploaded photo.
 
 ## Wisdom & Acknowledgements
 
-Before starting a project, definitely stick to one idea and plan a lot!
+Before starting a project, learn to stick to one idea and plan a lot!
 
 Special thanks to [DT](https://github.com/epoch), [Flo](https://github.com/florianjosefreheis) and the iterm8s class for all the assistance and guidance!
 
