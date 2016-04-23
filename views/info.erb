@@ -26,7 +26,9 @@
      <div id="middle" class="section white">
        <div class="row container">
           <div class="image_content">
+            <div class="col s12">
               <img src="<%= @info.img%>">
+            </div>
               <a id="comment_btn" class="btn-floating btn-large red modal-trigger" href="#modal2"><i class="large material-icons">mode_edit</i></a>
 
 <!-- if user_id of photo is the same as current user then show delete icon -->
@@ -77,7 +79,7 @@
 
             <ul class="collection">
               <li class="collection-item avatar">
-                 <i class="green material-icons circle">person</i>
+                 <i class="indigo material-icons circle">person</i>
                    <b><span id="titlename" class="title"><%= comment.user.username%> commented : </span></b>
                    <span id="box"> <%= comment.body %></span>
 
