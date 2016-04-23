@@ -27,10 +27,10 @@ Develop a web application that utilises CRUD operations on a SQL database with R
 
 ## Key Features
 
-- Users can sign in and immediately post photos of animals
-- Users can then comment and like other photos or their own.
-- Users can delete their photos.
-- Administrator can delete any uploaded photo.
+- Users can sign in and immediately post photos of their pets
+- Users can then comment and like other photos.
+- Users can delete their photos or comments
+- Administrator can delete any uploaded photo or comments.
 
 ***
 
@@ -47,8 +47,8 @@ Password: pudding
 
 **User**
 
-Email: dt@ga.co
-Password: dt
+Email: pizza@ga.co
+Password: pizza
 
 ***
 
@@ -79,9 +79,9 @@ Users are able to log into their account and view:
 Users are able to update their email or password.
 
 ###Delete
-Users are able to delete their own photos
+Users are able to delete their own photos or comments
 
-Administrator is able to delete any uploaded photo.
+Administrator is able to delete any uploaded photo or comments.
 
 ***
 
