@@ -136,12 +136,28 @@ post '/info/:id/comments' do
 end
 
 patch '/edit/details' do
-# Changing password
+# Changing password with password confirmation
+  confirm = params[:confirm]
+
   @user = current_user
   @user.password = params[:password]
-  @user.save
+
+  if confirm == @user.password
+
+    @user.save
+
+    flash[:nope] = "You have succesfully updated your password. Continue fluffin!"
 
   redirect to "/home"
+
+  else
+
+    flash[:nope] = "Sorry your passwords did not match. Please try again!"
+
+  redirect '/home'
+
+  end
+
 end
 
 get '/edit' do
