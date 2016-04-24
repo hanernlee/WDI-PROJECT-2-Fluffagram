@@ -154,6 +154,10 @@ body {
   height:100vh;
 }
 
+#close_modal {
+  float:right;
+}
+
 /*info page*/
 
 #showpage {
