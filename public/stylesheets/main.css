@@ -104,7 +104,6 @@ h4 {
 }
 
 /*home page styles*/
-
 .bg_op {
   background-color: rgba(0,0,0,0.5);
 }
@@ -193,6 +192,10 @@ h4 {
 }
 
 /*info page*/
+
+#modal4 h4 {
+  color:black;
+}
 
 #showpage {
   height:100%;
