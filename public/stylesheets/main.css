@@ -18,6 +18,7 @@ body {
 
 #brand_logo h4 {
   margin-left:2em;
+  color:white;
 }
 
 .logging {
@@ -59,10 +60,6 @@ body {
 
 #sign:hover, #log:hover {
   background-color:rgba(0,0,0,0.5);
-}
-
-h4 {
-  color:white;
 }
 
 .fullscreen_bg {
