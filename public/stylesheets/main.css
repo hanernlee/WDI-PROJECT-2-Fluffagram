@@ -91,12 +91,9 @@ h4 {
   transform: translate(-50%, -50%);
 }
 
-/*#bg {
-  background-image: url('../images/bg1.jpg');
-  background-size:cover;
-  height:100vh;
+#bg {
   color:white;
-}*/
+}
 
 #bg_pic {
   background-color: rgba(0,0,0,0.7);
