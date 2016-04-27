@@ -41,9 +41,8 @@ body {
 
 #logsign {
   margin: 0 auto;
-  margin-bottom:em;
   width:50%;
-  padding-top:9em;
+  padding-top:10em;
   text-align:center;
 }
 
@@ -257,6 +256,7 @@ h4 {
 }
 
 /*edit page*/
+
 #delete_btn {
   float:left;
   position:relative;
