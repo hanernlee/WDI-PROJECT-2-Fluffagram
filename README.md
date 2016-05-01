@@ -1,4 +1,4 @@
-# fluffagram
+# Fluffagram
 ***
 
 Fluffagram is the instagram for pets.
