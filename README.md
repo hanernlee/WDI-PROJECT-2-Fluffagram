@@ -22,6 +22,7 @@ Develop a web application that utilises CRUD operations on a SQL database with R
 7. CSS3 (together with Materialize framework)
 8. HTML5
 9. Heroku Hosting
+10. AWS Hosting
 
 ***
 
