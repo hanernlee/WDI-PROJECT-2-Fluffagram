@@ -1,7 +1,7 @@
 # Fluffagram
 ***
 
-Fluffagram is the instagram for pets.
+Fluffagram is a photo-sharing app for users to share their pet photos.
 
 ***
 
