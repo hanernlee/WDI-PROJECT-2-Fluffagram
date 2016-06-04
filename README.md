@@ -17,12 +17,13 @@ Develop a web application that utilises CRUD operations on a SQL database with R
 2. PostgreSQL
 3. Sinatra
 4. Active Record
-5. jQuery
-6. JavaScript
-7. CSS3 (together with Materialize framework)
-8. HTML5
-9. Heroku Hosting
-10. AWS Hosting
+5. JavaScript including the following library:
+  - jQuery
+6. CSS3
+  - Materialize CSS framework
+7. HTML5
+8. Heroku Hosting
+9. AWS Hosting
 
 ***
 
