@@ -4,8 +4,8 @@
 Fluffagram is a photo-sharing app for users to share their pet photos.
 
 
-![alt text](http://i.imgur.com/XAB8LaM.png)
-![alt text](http://i.imgur.com/LbTMmR1.png)
+![alt text](http://i.imgur.com/XAB8LaM.png = 300x200)
+![alt text](http://i.imgur.com/LbTMmR1.png = 400x200)
 
 ***
 
